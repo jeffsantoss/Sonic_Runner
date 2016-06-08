@@ -23,7 +23,7 @@ public class Sonic extends DesenhoMovel{
 	
 	}
 	
-	public synchronized boolean Colisao(Inimigo a) throws ColisaoException
+	public  boolean Colisao(Inimigo a) throws ColisaoException
 	{
 		if (rect_sonic.intersects(a.getRect_inimigo()) || rect_sonic.intersects(a.getRect_inimigo2()))
 			throw new ColisaoException();
